@@ -17,10 +17,13 @@
     <a href="#" class="brand">Project 2</a>
     <div class="menu-btn"></div>
     <div class="navigation">
-        <a href="#home">Pylint & AAA</a>
+        <a href="index.html">Pylint & AAA</a>
         <a href="oop.html">OOP</a>
         <a href="solid.html">SOLID</a>
         <a href="glossary.html">Glossary</a>
+        <a href="github.html">Github Basics</a>
+        <a href="azure.html">Azure & Docker</a>
+        <a href="commands.html">Commands</a>
     </div>
 </header>
 
@@ -42,18 +45,16 @@
     </div>
     <div class="content">
         <div class="column col-left reveal">
-            <h1 style="margin-bottom: 20px">S</h1>
-            <p style="font-size: x-large; margin-left: 50px">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1 style="margin-bottom: 20px">Single Responsibility</h1>
+            <p style="font-size: x-large; margin-left: 50px">To do math operations.</p>
         </div>
     </div>
 
     <div>
         <div class="content">
             <div class="column col-left reveal">
-                <h1 style="margin-bottom: 20px">O</h1>
-                <p style="font-size: x-large; margin-left: 50px">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1 style="margin-bottom: 20px">Open Closed</h1>
+                <p style="font-size: x-large; margin-left: 50px">When a math operation is done, add it to the history.</p>
             </div>
         </div>
     </div>
@@ -61,9 +62,9 @@
     <div>
         <div class="content">
             <div class="column col-left reveal">
-                <h1 style="margin-bottom: 20px">L</h1>
-                <p style="font-size: x-large; margin-left: 50px">TLorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1 style="margin-bottom: 20px">Liskov Substitution</h1>
+                <p style="font-size: x-large; margin-left: 50px">Every Math operation class is built from
+                    the Operation class which holds the numbers to be calculated </p>
             </div>
         </div>
     </div>
@@ -71,9 +72,10 @@
     <div>
         <div class="content">
             <div class="column col-left reveal">
-                <h1 style="margin-bottom: 20px">I</h1>
-                <p style="font-size: x-large; margin-left: 50px">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h1 style="margin-bottom: 20px">Interface Segregation</h1>
+                <p style="font-size: x-large; margin-left: 50px">We don’t want to import classes that aren’t needed.
+                    For example, we don’t want to import the Operation class, just the classes that are built
+                    from it: Addition, Subtraction, Multiplication, and Division.</p>
             </div>
         </div>
     </div>
@@ -81,10 +83,43 @@
     <div>
         <div class="content">
             <div class="column col-left reveal">
-                <h1 style="margin-bottom: 20px">D</h1>
-                <p style="font-size: x-large; margin-left: 50px">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                <h1 style="margin-bottom: 20px">Dependency Inversion</h1>
+                <p style="font-size: x-large; margin-left: 50px">Write logic in a way that is scalable so that when circumstances
+                    or environments are different, the logic of the program will still work. </p>
+
+                <p style="font-size: x-large; margin-left: 100px; margin-top: 50px">Create a python package whose name is "tests"</p>
+                <div class="column col-left reveal">
+                    <div class="img-card">
+                        <img src="images/solid-1.png" alt="solid-1">
+                    </div>
+                </div>
+
+                <p style="font-size: x-large; margin-left: 100px">Then in terminal at the root of your project directory</p>
+
+                <p style="font-size: x-large; margin-left: 100px">Then create a python file within that folder with a prefix
+                    or suffix of “test_” or “_test</p>
+                <div class="column col-left reveal">
+                    <div class="img-card">
+                        <img src="images/solid-2.png" alt="solid-2">
+                    </div>
+                </div>
+
+                <p style="font-size: x-large; margin-left: 100px">Within the python file, create functions with a prefix
+                    or suffix of “test_” or “_test” </p>
+                <div class="column col-left reveal">
+                    <div class="img-card">
+                        <img src="images/solid-3.png" alt="solid-3">
+                    </div>
+                </div>
+
+                <p style="font-size: x-large; margin-left: 100px">When the program is run using the “pylint” command in
+                    terminal, pylint will look through the tests package and look for any functions with the “test”
+                    prefix or suffix and run those functions.</p>
+                <div class="column col-left reveal">
+                    <div class="img-card">
+                        <img src="images/solid-4.png" alt="solid-4">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
